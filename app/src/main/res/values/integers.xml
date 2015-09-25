@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pages_per_load">3</integer>
+    <integer name="movies_per_page">20</integer>
+    <integer name="fade_duration">250</integer>
+</resources>

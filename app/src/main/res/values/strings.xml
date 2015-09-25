@@ -1,0 +1,102 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">Movies</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_movie_detail">MovieDetailActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Strings related to search functionality. -->
+    <string name="action_search"></string>
+    <string name="search_hint">Enter movie title...</string>
+
+    <!-- Strings related to favorties preference.-->
+    <string name="action_favorites"></string>
+    <string name="pref_favorites_label">Favorites</string>
+    <string name="pref_favorites_key">favorites</string>
+    <string name="pref_favorites_default_value">false</string>
+    <string name="pref_favorites_summary">Restrict results to favorite movies only.</string>
+
+    <!-- Strings related to type settings. -->
+    <string name="pref_type_label">Type</string>
+    <string name="pref_type_key">type</string>
+
+    <string name="pref_type_movies_entry">Movies</string>
+    <string name="pref_type_tv_entry">TV</string>
+
+    <string name="pref_type_movies_value">movie</string>
+    <string name="pref_type_tv_value">tv</string>
+
+    <string-array name="pref_type_entries">
+        <item>@string/pref_type_movies_entry</item>
+        <item>@string/pref_type_tv_entry</item>
+    </string-array>
+
+    <string-array name="pref_type_values">
+        <item>@string/pref_type_movies_value</item>
+        <item>@string/pref_type_tv_value</item>
+    </string-array>
+
+    <!-- Strings related to genre settings. -->
+    <string name="pref_genre_label">Genre</string>
+    <string name="pref_genre_key">genre</string>
+
+    <string name="pref_genre_action_entry">Action</string>
+    <string name="pref_genre_adventure_entry">Adventure</string>
+    <string name="pref_genre_animation_entry">Animation</string>
+
+    <string name="pref_genre_action_value">28</string>
+    <string name="pref_genre_adventure_value">12</string>
+    <string name="pref_genre_animation_value">16</string>
+
+    <string-array name="pref_genre_entries">
+        <item>@string/pref_genre_action_entry</item>
+        <item>@string/pref_genre_adventure_entry</item>
+        <item>@string/pref_genre_animation_entry</item>
+    </string-array>
+
+    <string-array name="pref_genre_values">
+        <item>@string/pref_genre_action_value</item>
+        <item>@string/pref_genre_adventure_value</item>
+        <item>@string/pref_genre_animation_value</item>
+    </string-array>
+
+    <!-- Strings related to sort by settings. -->
+    <string name="pref_sort_by_label">Sort By</string>
+    <string name="pref_sort_by_key">sort by</string>
+
+    <string name="pref_sort_by_popularity_entry">Popularity</string>
+    <string name="pref_sort_by_rating_entry">Rating</string>
+    <string name="pref_sort_by_release_date_entry">Release Date</string>
+    <string name="pref_sort_by_original_title_entry">Title</string>
+
+    <string name="pref_sort_by_popularity_value">popularity.desc</string>
+    <string name="pref_sort_by_rating_value">vote_average.desc</string>
+    <string name="pref_sort_by_release_date_value">release_date.desc</string>
+    <string name="pref_sort_by_original_title_value">original_title.asc</string>
+
+    <string-array name="pref_sort_by_entries">
+        <item>@string/pref_sort_by_popularity_entry</item>
+        <item>@string/pref_sort_by_rating_entry</item>
+        <item>@string/pref_sort_by_original_title_entry</item>
+        <item>@string/pref_sort_by_release_date_entry</item>
+    </string-array>
+
+    <string-array name="pref_sort_by_values">
+        <item>@string/pref_sort_by_popularity_value</item>
+        <item>@string/pref_sort_by_rating_value</item>
+        <item>@string/pref_sort_by_original_title_value</item>
+        <item>@string/pref_sort_by_release_date_value</item>
+    </string-array>
+
+    <!-- Detail Strings -->
+    <string name="format_minutes">
+        <xliff:g id="minutes">%d</xliff:g>min
+    </string>
+    <string name="format_release_date">
+        <xliff:g id="month">%s</xliff:g> <xliff:g id="year">%s</xliff:g>
+    </string>
+    <string name="format_voting">
+        <xliff:g id="average">%2.1f</xliff:g>/10 (<xliff:g id="count">%d</xliff:g>)
+    </string>
+
+</resources>

@@ -1,0 +1,138 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_detail_primary"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="app.com.example.keenanreimer.movies.DetailFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id = "@+id/text_view_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_gravity="left|center_horizontal"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="40dp"
+                    android:paddingLeft="30dp"
+                    android:paddingStart="30dp"
+                    android:textSize="40dp"
+                    android:background="#000101"
+                    android:textColor="#ffffff" />
+
+                <!-- This linear layout exists to patch a bug laying out in relative layouts -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/check_box_favorite"
+                        android:button="@drawable/favorite_selector"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp"
+                android:paddingEnd="24dp"
+                android:paddingLeft="24dp"
+                android:paddingStart="24dp"
+                android:paddingBottom="24dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <app.com.example.keenanreimer.movies.view.MoviePosterView
+                        android:id="@+id/poster_image_view"
+                        android:scaleType="centerCrop"
+                        android:layout_width="150dp"
+                        android:layout_height="225dp"
+                        android:padding="4dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="32dp"
+                        android:paddingLeft="32dp">
+
+                        <TextView
+                            android:id="@+id/date_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:id="@+id/rating_text_view"
+                            android:textColor="#010101"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/adult_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#010101"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/overview_text_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:textSize = "16sp" />
+                
+                <View
+                    android:id="@+id/space_videos"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    />
+
+                <View
+                    android:id="@+id/spacer_reviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom= "18dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
